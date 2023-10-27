@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/1fe08c0760.js" crossorigin="anonymous"></script>
+      <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,500;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+      <!--css stylesheet-->
+    <link rel="stylesheet" href="./style.css">
+      <!--javascript link-->
+    <script src="MainScript.js"></script>
+      <!--page title-->
+    <title>AnkoredDigital</title>
+</head>
+<body>
+
+
+    <!--row start-->
+<div class="row">
+
+    <div class="column_1">
+        <h1 class="centertext">Card Details Form</h1>
+        <p class="important">This should be an interactive form</p>
+       <div class="parentfigure">
+        <figure class="parent">
+            <div class="card-front"><img src="assets/images/bg-card-front.png" alt=""></div>
+            <div class="card-logo"><img src="assets/images/card-logo.svg" alt=""></div>
+            <div class="card-back"><img src="assets/images/bg-card-back.png" alt=""></div>
+            <figcaption>Card Image</figcaption>
+            <p class="info"><b>Tashel T. Reddy</b></p>
+            <p class="infonumber">1564 3546 4789 43</p>
+            <P class="expirydate">Valid Thru <b>09/28</b></P>
+            <P class="cvc"><b>CVC</b> 992</P>
+        </figure>
+       </div>
+    </div>
+
+        <!--row end-->
+        <div class="column_2">
+            <!--form start-->
+            <div class="formContainer">
+                <form id="card-form">
+                    <div class="cardInfo">
+                        <li><label for="card-name">Cardholder Name</label>
+                        <input type="text" id="card-name" placeholder="Tashel Reddy" required></li>                   <li>
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" placeholder=" 6591 2345 9876 1001" required> 
+                        </li>
+                    </div>
+                    <div class="expiry-date">
+                        <li><label for="expiry-date">Expiry Date </label class="date"><input type="text" id="expiry-date" placeholder="MM/YY"  required></li>
+                        
+                        <li><label for="cvc">CVC</label><input type="text" id="cvc" placeholder="000" required></li>
+                    </div>
+                    <button type="submit" required>Confirm</button>
+                  </form>
+                  <div id="error-message" style="color: red;"></div>
+                </div>
+                
+            </div>    
+</div>
+ <!--form end-->
+
+
+
+</body>
+</html>

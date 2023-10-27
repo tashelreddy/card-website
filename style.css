@@ -1,0 +1,226 @@
+/*root colors*/
+:root{
+    --primary:#6A1ED9;
+    --secondary:#6A657F;
+    --lavender:#D4CCFF;
+    --black:#000;
+}
+/*body*/
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poltawski Nowy', serif;
+}
+
+/* column styling start */
+.row{
+  display: flex;
+  height: 100vh;
+}
+
+.centertext{
+  text-align: center;
+  color: var(--primary);
+  font-size: 30px;
+}
+
+p.important{
+text-align: center;
+font-size: 18px;
+color: var(--primary);
+}
+.column_1{
+  width: 40%;
+  padding: 10px;
+  background: rgb(147,81,233);
+  background: -moz-linear-gradient(0deg, rgba(147,81,233,1) 0%, rgba(202,156,230,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(147,81,233,1) 0%, rgba(202,156,230,1) 100%);
+  background: linear-gradient(0deg, rgba(147,81,233,1) 0%, rgba(202,156,230,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9351e9",endColorstr="#ca9ce6",GradientType=1);}
+
+
+.column_2{
+  width: 60%;
+  padding: 10px;
+  background-color: var(--lavender);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* column styling end */
+
+
+/* card image divs elements start*/
+.parent {
+  position: relative;
+  top: 22px;
+  left: 152px;
+}
+
+.card-front{
+  position: relative;
+  top: 10;
+  left: 0;
+}
+
+.card-back{
+  position: absolute;
+  top: 270px;
+  left: 52px;
+}
+
+.card-logo{
+  position: absolute;
+  top: 19px;
+  left: 40px;
+}
+
+figcaption{
+ caption-side: bottom;
+ display: none;
+  }
+
+  .info{
+    position: relative;
+    font-size: 20px;
+    color: var(--black);
+    bottom: 107px;
+    left: 49px;
+  }
+
+  .infonumber{
+    position: relative;
+    font-size: 18px;
+    color: var(--black);
+    bottom: 116px;
+    left: 49px;
+  }
+
+  .expirydate{
+    position: relative;
+    left: 308px;
+    top: -150px;
+    font-size: 11px;
+  }
+
+  .cvc{
+    position: absolute;
+    right: 30px;
+    bottom: -55px;
+    color: #6A657F;
+  }
+/* card image divs elements start end*/
+
+/*form styling start*/
+.formContainer{
+  position: relative;
+  top: 163px;
+  left: 206px;
+  width: 582px;
+  background-color: var(--lavender);
+  border-style: solid;
+  border-color: var(--primary);
+}
+
+.cardInfo{
+  display: grid;
+  align-content: space-evenly;
+  justify-content: start;
+  align-items: baseline;
+  justify-items: center;
+}
+
+#card-form li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 5px;
+  text-align: left;
+
+}
+
+#card-form label {
+  font-size: 15px;
+  font-weight: 600;
+  width: 130%;
+  padding: 11px 15px;
+  color: var(--primary);
+}
+
+#card-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: solid;
+  border-color: var(--primary);
+  background-color: var(--lavender);
+  width: 100%;
+  outline: none;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+#card-form input:focus,
+#card-form input:hover {
+  border: 1px solid var(--primary);
+}
+
+#card-form .expiry-date {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+  align-content: center;
+  justify-items: start;
+  align-items: end;
+}
+
+#card-form .expiry-date input {
+  flex: 1;
+  width: 100%;
+}
+
+#card-form button {
+  width: 184px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: var(--primary);
+  border: none;
+  cursor: pointer;
+  margin-left: 9px;
+  margin-top: 17px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+/*form styling end*/
+
+/*responsive styling for small screens start*/
+
+@media (max-width:800px) {
+
+  .formContainer {
+      grid-template-columns: 100%;
+      width: 380px;
+  }
+}
+
+@media (max-width:430px) {
+  .formContainer {
+      border-radius: 0px;
+      width: 100%;
+      padding: 5px;
+      height: 100%;
+  }
+
+  .Name,
+  .expiry-date {
+      display: block;
+  }
+}
+/*responsive styling for small screens end*/
+
